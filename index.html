@@ -25,14 +25,17 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
             min-height: 100vh;
-            padding: 1rem;
+            padding: 0.5rem;
             overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .main-container {
             max-width: 1400px;
+            width: 100%;
             margin: 0 auto;
-            padding: 2rem 0;
         }
         
         .glass-card {
@@ -52,7 +55,7 @@
         
         .header-gradient {
             background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
-            padding: 3rem 2rem;
+            padding: 1.5rem 1.5rem;
             position: relative;
             overflow: hidden;
         }
@@ -74,55 +77,36 @@
         }
         
         .logo-container {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            width: 70px;
+            height: 70px;
+            background: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             font-weight: 900;
-            font-size: 1.5rem;
-            color: white;
+            font-size: 1.2rem;
+            color: #6366f1;
             position: relative;
             z-index: 1;
-        }
-        
-        .logo-container::before {
-            content: 'SCET';
-            position: absolute;
-            color: white;
-            font-weight: 900;
-            font-size: 1.5rem;
-            z-index: 0;
-        }
-        
-        .logo-container img {
-            width: 90%;
-            height: 90%;
-            object-fit: contain;
-            border-radius: 50%;
-            position: relative;
-            z-index: 1;
-            background: white;
         }
         
         .college-title {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             font-weight: 800;
             color: white;
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             position: relative;
             z-index: 1;
         }
         
         .dept-title {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             position: relative;
             z-index: 1;
         }
@@ -130,36 +114,36 @@
         .event-badge {
             background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
             color: white;
-            padding: 1rem 2.5rem;
+            padding: 0.7rem 1.8rem;
             border-radius: 60px;
-            font-size: 1.25rem;
+            font-size: 1rem;
             font-weight: 700;
             display: inline-block;
             box-shadow: 0 10px 30px rgba(239, 68, 68, 0.4);
             position: relative;
             z-index: 1;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.8rem;
         }
         
         .theme-text {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #fbbf24;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             position: relative;
             z-index: 1;
         }
         
         .content-section {
-            padding: 3rem 2rem;
+            padding: 1.5rem 1.5rem;
         }
         
         .input-card {
             background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
             border-radius: 20px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
             box-shadow: 0 10px 40px rgba(99, 102, 241, 0.1);
         }
         
@@ -192,10 +176,10 @@
         .btn-start {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
-            padding: 1.25rem 3rem;
+            padding: 1rem 2.5rem;
             border: none;
-            border-radius: 20px;
-            font-size: 1.25rem;
+            border-radius: 15px;
+            font-size: 1.1rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -213,10 +197,10 @@
         .btn-reset {
             background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
             color: white;
-            padding: 1.25rem 3rem;
+            padding: 1rem 2.5rem;
             border: none;
-            border-radius: 20px;
-            font-size: 1.25rem;
+            border-radius: 15px;
+            font-size: 1.1rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -233,15 +217,15 @@
         
         .countdown-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
         }
         
         .countdown-box {
             background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-            border-radius: 25px;
-            padding: 3rem 2rem;
+            border-radius: 20px;
+            padding: 1.5rem 1rem;
             text-align: center;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
@@ -271,18 +255,18 @@
         }
         
         .countdown-number {
-            font-size: 5rem;
+            font-size: 3.5rem;
             font-weight: 900;
             color: white;
             line-height: 1;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             position: relative;
             z-index: 1;
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
         
         .countdown-label {
-            font-size: 1.25rem;
+            font-size: 1rem;
             font-weight: 600;
             color: rgba(255, 255, 255, 0.9);
             text-transform: uppercase;
@@ -294,12 +278,12 @@
         .complete-banner {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
-            padding: 3rem;
-            border-radius: 25px;
+            padding: 1.5rem;
+            border-radius: 20px;
             text-align: center;
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 900;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
             box-shadow: 0 20px 60px rgba(16, 185, 129, 0.4);
             animation: bounce 1s ease-in-out infinite;
         }
@@ -310,35 +294,35 @@
         }
         
         .section-title {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 800;
             color: #1e293b;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1rem;
+            gap: 0.75rem;
         }
         
         .footer-badges {
             background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-            padding: 2rem;
-            border-radius: 20px;
-            margin-top: 3rem;
+            padding: 1.2rem;
+            border-radius: 15px;
+            margin-top: 1.5rem;
         }
         
         .badge-pill {
             background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 0.6rem 1.2rem;
             border-radius: 50px;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-weight: 600;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            margin: 0.5rem;
+            margin: 0.3rem;
             box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
         }
         
@@ -367,103 +351,20 @@
             z-index: 9999;
         }
         
-        /* Enhanced Mobile Responsiveness */
         @media (max-width: 768px) {
-            .college-title { font-size: 1.75rem; }
-            .dept-title { font-size: 1.1rem; }
-            .countdown-number { font-size: 3.5rem; }
-            .countdown-grid { gap: 1rem; }
-            .complete-banner { font-size: 2rem; padding: 2rem; }
-            .event-badge { 
-                font-size: 1.1rem; 
-                padding: 0.8rem 1.8rem;
-            }
-            .theme-text { font-size: 1.5rem; }
-        }
-        
-        /* Extra Small Devices */
-        @media (max-width: 480px) {
-            body {
-                padding: 0.5rem;
-            }
-            
-            .main-container {
-                padding: 1rem 0;
-            }
-            
-            .header-gradient {
-                padding: 2rem 1rem;
-            }
-            
-            .content-section {
-                padding: 2rem 1rem;
-            }
-            
-            .input-card {
-                padding: 1.5rem;
-            }
-            
-            .college-title { 
-                font-size: 1.4rem; 
-                line-height: 1.3;
-            }
-            
-            .dept-title { 
-                font-size: 0.95rem;
-                line-height: 1.4;
-            }
-            
-            .logo-container {
-                width: 80px;
-                height: 80px;
-            }
-            
-            .countdown-number { 
-                font-size: 2.5rem; 
-            }
-            
-            .countdown-box {
-                padding: 2rem 1rem;
-            }
-            
-            .btn-start, .btn-reset {
-                padding: 1rem 2rem;
-                font-size: 1.1rem;
-            }
-            
-            .datetime-input {
-                padding: 0.8rem 1rem;
-                font-size: 0.95rem;
-            }
-            
-            .badge-pill {
-                font-size: 0.85rem;
-                padding: 0.6rem 1rem;
-            }
-            
-            .footer-badges {
-                padding: 1.5rem 1rem;
-            }
-        }
-        
-        /* Very Small Devices */
-        @media (max-width: 360px) {
-            .college-title { 
-                font-size: 1.2rem; 
-            }
-            
-            .countdown-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0.8rem;
-            }
-            
-            .countdown-number { 
-                font-size: 2rem; 
-            }
-            
-            .countdown-label {
-                font-size: 1rem;
-            }
+            body { padding: 0.25rem; }
+            .college-title { font-size: 1.3rem; }
+            .dept-title { font-size: 0.95rem; }
+            .event-badge { font-size: 0.85rem; padding: 0.6rem 1.2rem; }
+            .theme-text { font-size: 1.2rem; }
+            .countdown-number { font-size: 2.8rem; }
+            .countdown-label { font-size: 0.85rem; }
+            .countdown-grid { gap: 0.75rem; grid-template-columns: repeat(2, 1fr); }
+            .complete-banner { font-size: 1.5rem; padding: 1.2rem; }
+            .btn-start, .btn-reset { padding: 0.9rem 2rem; font-size: 1rem; }
+            .header-gradient { padding: 1rem; }
+            .content-section { padding: 1rem; }
+            .logo-container { width: 60px; height: 60px; font-size: 1rem; }
         }
     </style>
 </head>
@@ -547,10 +448,7 @@
                 setIsComplete(false);
                 setStartDateTime('');
                 setEndDateTime('');
-                const container = document.getElementById('confettiContainer');
-                if (container) {
-                    container.innerHTML = '';
-                }
+                document.getElementById('confettiContainer').innerHTML = '';
             };
             
             const padZero = (num) => String(num).padStart(2, '0');
@@ -560,10 +458,8 @@
                     <div className="glass-card">
                         <div className="header-gradient">
                             <div style={{ textAlign: 'center' }}>
-                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.5rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-                                    <div className="logo-container">
-                                        <img src="logo.png" alt="SCET Logo" onError={(e) => e.target.style.display = 'none'} />
-                                    </div>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                                    <div className="logo-container">SCET</div>
                                     <div>
                                         <h1 className="college-title">Swarnandhra College of Engineering & Technology</h1>
                                         <p className="dept-title">Department of Artificial Intelligence and Machine Learning</p>
@@ -576,10 +472,10 @@
                                 
                                 <h2 className="theme-text">✨ "Get Ready to Build & Innovate" ✨</h2>
                                 
-                                <p style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.5rem', position: 'relative', zIndex: 1 }}>
+                                <p style={{ color: 'white', fontSize: '0.95rem', marginBottom: '0.3rem', position: 'relative', zIndex: 1 }}>
                                     <strong>In Association with Datavalley</strong>
                                 </p>
-                                <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1rem', position: 'relative', zIndex: 1 }}>
+                                <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '0.85rem', position: 'relative', zIndex: 1 }}>
                                     📍 Seetharampuram, Narsapur, Andhra Pradesh 534280
                                 </p>
                             </div>
@@ -594,7 +490,7 @@
                             
                             {!isRunning && !isComplete && (
                                 <div className="input-card">
-                                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
+                                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', marginBottom: '1.5rem' }}>
                                         <div>
                                             <label className="form-label">
                                                 <i className="ti ti-calendar-event"></i>
@@ -647,6 +543,7 @@
                                             <div className="countdown-label">Hours</div>
                                         </div>
                                         <div className="countdown-box">
+                                            <div className="countdown-box">
                                             <div className="countdown-number">{padZero(timeRemaining.minutes)}</div>
                                             <div className="countdown-label">Minutes</div>
                                         </div>
@@ -656,7 +553,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+                                    <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
                                         <button onClick={handleReset} className="btn-reset">
                                             <i className="ti ti-refresh"></i>
                                             Reset Countdown
@@ -666,8 +563,8 @@
                             )}
                             
                             <div className="footer-badges">
-                                <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-                                    <h3 style={{ color: '#1e293b', fontWeight: '700', marginBottom: '1rem' }}>
+                                <div style={{ textAlign: 'center', marginBottom: '0.8rem' }}>
+                                    <h3 style={{ color: '#1e293b', fontWeight: '700', fontSize: '1.1rem', marginBottom: '0.8rem' }}>
                                         🤝 Partnerships & Certifications
                                     </h3>
                                 </div>
@@ -675,10 +572,10 @@
                                     <span className="badge-pill">🇮🇳 Startup India</span>
                                     <span className="badge-pill">✓ ISO Certified</span>
                                     <span className="badge-pill">🏢 MSME Registered</span>
-                                    <span className="badge-pill">🌍 Global Collaboration 🇮🇳 🇺🇸 🇬🇧 🇮🇹</span>
+                                    <span className="badge-pill">🌍 Global 🇮🇳 🇺🇸 🇬🇧 🇮🇹</span>
                                 </div>
-                                <div style={{ textAlign: 'center', marginTop: '1.5rem', color: '#64748b', fontSize: '0.95rem' }}>
-                                    <p><strong>🌐 www.datavalley.ai</strong> | 📧 info@datavalley.ai</p>
+                                <div style={{ textAlign: 'center', marginTop: '0.8rem', color: '#64748b', fontSize: '0.85rem' }}>
+                                    <p style={{ margin: 0 }}><strong>🌐 www.datavalley.ai</strong> | 📧 info@datavalley.ai</p>
                                 </div>
                             </div>
                         </div>
@@ -690,6 +587,6 @@
         ReactDOM.render(<HackathonCountdown />, document.getElementById('root'));
     </script>
     
-    <div id="confettiContainer" class="confetti-container"></div>
+    <div id="confettiContainer" className="confetti-container"></div>
 </body>
 </html>
